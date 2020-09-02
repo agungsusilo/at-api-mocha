@@ -1,0 +1,95 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-08-26T08:00:21.964Z",
+    "end": "2020-08-26T08:00:26.547Z",
+    "duration": 4583,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "2a776a32-3ff5-4f2e-9a91-641fcdad2919",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "4aeab772-b46f-486e-bcbd-2806c7255a7e",
+        "title": "@getvalidationtag As a User, I should be able to see data",
+        "fullFile": "D:\\Sinbad\\Automation_Test_API\\API\\AT_API_Skeleton\\api\\test\\Get_status_test.js",
+        "file": "\\api\\test\\Get_status_test.js",
+        "beforeHooks": [
+          {
+            "title": "\"before all\" hook: #hook",
+            "fullTitle": "@getvalidationtag As a User, I should be able to see data \"before all\" hook: #hook",
+            "timedOut": false,
+            "duration": 1,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "",
+            "err": {},
+            "isRoot": false,
+            "uuid": "3dafeb1f-1f2f-4b3f-aae6-0c65a7468aee",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "@get As a User, I should be able to see my status",
+            "fullTitle": "@getvalidationtag As a User, I should be able to see data @get As a User, I should be able to see my status",
+            "timedOut": false,
+            "duration": 4511,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "const response = await page.getStatusPayment(payload);\nconsole.log(response);\nassert(response.status).to.equal(code.successOk);\n        assert(response.body).to.be.jsonSchema(schema);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "b1963253-c1bb-499c-b0fc-3b7ebd783d58",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "b1963253-c1bb-499c-b0fc-3b7ebd783d58"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 4511,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 180000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 180000
+  },
+  "copyrightYear": 2020
+}
