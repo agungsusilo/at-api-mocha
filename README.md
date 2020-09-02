@@ -1,1 +1,1 @@
-This is Project for create skeleton api test in Sinbad
+This is Project for create skeleton api test in Sinbad SDET Team
