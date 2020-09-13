@@ -1,0 +1,100 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "required": [
+        "data",
+        "meta"
+    ],
+    "properties": {
+        "data": {
+            "$id": "#/properties/data",
+            "type": "array",
+            "additionalItems": false,
+            "items": {
+                "$id": "#/properties/data/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/data/items/anyOf/0",
+                        "type": "object",
+                        "required": [
+                            "pointExceptionId",
+                            "type",
+                            "supplierId",
+                            "isActive"
+                        ],
+                        "properties": {
+                            "pointExceptionId": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/pointExceptionId",
+                                "type": "integer"
+                            },
+                            "type": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/type",
+                                "type": "string"
+                            },
+                            "supplierId": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/supplierId",
+                                "type": "integer"
+                            },
+                            "isActive": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/isActive",
+                                "type": "boolean"
+                            }
+                        },
+                        "additionalProperties": false
+                    }
+                ]
+            }
+        },
+        "meta": {
+            "$id": "#/properties/meta",
+            "type": "object",
+            "required": [
+                "perPage",
+                "currentPage",
+                "firstPage",
+                "lastPage",
+                "totalData",
+                "nextPage",
+                "message",
+                "previousPage"
+            ],
+            "properties": {
+                "perPage": {
+                    "$id": "#/properties/meta/properties/perPage",
+                    "type": "integer"
+                },
+                "currentPage": {
+                    "$id": "#/properties/meta/properties/currentPage",
+                    "type": "integer"
+                },
+                "firstPage": {
+                    "$id": "#/properties/meta/properties/firstPage",
+                    "type": "integer"
+                },
+                "lastPage": {
+                    "$id": "#/properties/meta/properties/lastPage",
+                    "type": "integer"
+                },
+                "totalData": {
+                    "$id": "#/properties/meta/properties/totalData",
+                    "type": "integer"
+                },
+                "nextPage": {
+                    "$id": "#/properties/meta/properties/nextPage",
+                    "type": "integer"
+                },
+                "message": {
+                    "$id": "#/properties/meta/properties/message",
+                    "type": "string"
+                },
+                "previousPage": {
+                    "$id": "#/properties/meta/properties/previousPage",
+                    "type": "integer"
+                }
+            },
+            "additionalProperties": false
+        }
+    },
+    "additionalProperties": false
+}
