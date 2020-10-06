@@ -1,4 +1,4 @@
-module gitlab.com/sinbad-ecosystem/sdet/automation-skeleton
+module gitlab.com/sinbad-ecosystem/sdet/automation-skeleton/at_api_resty
 
 go 1.15
 
