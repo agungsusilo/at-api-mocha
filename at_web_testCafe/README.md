@@ -1,4 +1,4 @@
 - Run `mv .envexample .env`
-- Add Credentials Information in `.env` file
+- Add Credentials Information in the `.env` file
 - Run `npm install`
 - Run `npm run test`
