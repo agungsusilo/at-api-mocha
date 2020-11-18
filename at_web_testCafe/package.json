@@ -1,0 +1,23 @@
+{
+  "name": "testcafe-try",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe -c 2 chrome test/*.e2e.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dudiadikarya-sinbad/testcafe-try.git"
+  },
+  "author": "Dudi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dudiadikarya-sinbad/testcafe-try/issues"
+  },
+  "homepage": "https://github.com/dudiadikarya-sinbad/testcafe-try#readme",
+  "devDependencies": {
+    "testcafe": "^1.9.4",
+    "dotenv": "^7.0.0"
+  }
+}
