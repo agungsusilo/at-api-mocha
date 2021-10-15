@@ -3,6 +3,7 @@
   "successCreated": 201,
   "successAccepted": 202,
   "successNoContent": 204,
+  "successStatus" : "success",
   "failedMultipleChoices": {
     "codeNumber": 300,
     "codeMessage": "MultipleChoices"

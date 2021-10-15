@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2020-08-26T08:00:21.964Z",
-    "end": "2020-08-26T08:00:26.547Z",
-    "duration": 4583,
+    "start": "2021-10-15T17:24:56.798Z",
+    "end": "2021-10-15T17:24:57.928Z",
+    "duration": 1130,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -19,7 +19,7 @@
     "pendingPercentClass": "danger"
   },
   "suites": {
-    "uuid": "2a776a32-3ff5-4f2e-9a91-641fcdad2919",
+    "uuid": "adcab9b7-648f-4cd7-964c-787daec5fcf7",
     "title": "",
     "fullFile": "",
     "file": "",
@@ -28,14 +28,14 @@
     "tests": [],
     "suites": [
       {
-        "uuid": "4aeab772-b46f-486e-bcbd-2806c7255a7e",
-        "title": "@getvalidationtag As a User, I should be able to see data",
-        "fullFile": "D:\\Sinbad\\Automation_Test_API\\API\\AT_API_Skeleton\\api\\test\\Get_status_test.js",
-        "file": "\\api\\test\\Get_status_test.js",
+        "uuid": "c651e863-1692-4cf2-bcf1-f2a586641729",
+        "title": "@getSearchResult User want to do search with custom keyword",
+        "fullFile": "F:\\Agungs Folder\\SINBAD\\sdet-automation-sinbad\\sdet-automation-skeleton\\at_api_mocha_chai\\api\\test\\Get_search_result.js",
+        "file": "\\api\\test\\Get_search_result.js",
         "beforeHooks": [
           {
-            "title": "\"before all\" hook: #hook",
-            "fullTitle": "@getvalidationtag As a User, I should be able to see data \"before all\" hook: #hook",
+            "title": "\"before all\" hook",
+            "fullTitle": "@getSearchResult User want to do search with custom keyword \"before all\" hook",
             "timedOut": false,
             "duration": 1,
             "pass": false,
@@ -44,7 +44,7 @@
             "code": "",
             "err": {},
             "isRoot": false,
-            "uuid": "3dafeb1f-1f2f-4b3f-aae6-0c65a7468aee",
+            "uuid": "9a927237-6aba-402c-aa0f-d1a85eaa7a7c",
             "isHook": true,
             "skipped": false
           }
@@ -52,31 +52,31 @@
         "afterHooks": [],
         "tests": [
           {
-            "title": "@get As a User, I should be able to see my status",
-            "fullTitle": "@getvalidationtag As a User, I should be able to see data @get As a User, I should be able to see my status",
+            "title": "@getSearch undefined",
+            "fullTitle": "@getSearchResult User want to do search with custom keyword @getSearch undefined",
             "timedOut": false,
-            "duration": 4511,
+            "duration": 1106,
             "state": "passed",
             "speed": "slow",
             "pass": true,
             "fail": false,
             "pending": false,
-            "code": "const response = await page.getStatusPayment(payload);\nconsole.log(response);\nassert(response.status).to.equal(code.successOk);\n        assert(response.body).to.be.jsonSchema(schema);",
+            "code": "const params = data.queryList(1, 20, \"word\", \"price\", \"asc\", 0, 999999999, 0, 999999999);\n\t\tresponse = await page.getSearchResult(params);\n\t\tassert(response.status).to.equal(status.successOk);\nconsole.log(response.body.data.data);\n// assert(response.body).to.be.jsonSchema(schema);S",
             "err": {},
             "isRoot": false,
-            "uuid": "b1963253-c1bb-499c-b0fc-3b7ebd783d58",
+            "uuid": "7cc6e1fd-2f21-4a5f-9308-aad5536c05d6",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "b1963253-c1bb-499c-b0fc-3b7ebd783d58"
+          "7cc6e1fd-2f21-4a5f-9308-aad5536c05d6"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 4511,
+        "duration": 1106,
         "root": false,
         "rootEmpty": false,
         "_timeout": 180000
@@ -91,5 +91,5 @@
     "rootEmpty": true,
     "_timeout": 180000
   },
-  "copyrightYear": 2020
+  "copyrightYear": 2021
 }
